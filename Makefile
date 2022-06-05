@@ -73,7 +73,7 @@ capi:
 install:
 	mkdir -p "$(DESTDIR)$(prefix)/include/uWebSockets"
 	cp -r src/* "$(DESTDIR)$(prefix)/include/uWebSockets"
-
+	cp uSockets/src/libusockets.h "$(DESTDIR)$(prefix)/include/uWebSockets"
 all:
 	$(MAKE) examples
 	$(MAKE) -C fuzzing
